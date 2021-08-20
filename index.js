@@ -8,7 +8,7 @@ function myFunction() {
   console.log(external);
   const internal = "Hello! I'm inside myFunction!";
 
-  function nestedFunction() {
+  function nestedFunction(){
     console.log(internal);
   }
   nestedFunction();
