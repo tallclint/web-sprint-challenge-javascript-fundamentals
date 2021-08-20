@@ -20,7 +20,7 @@ myFunction();
 
 // nestedFunction can see variables from outer myFunction
 // Children can always see the parent
-
+// Nested functions can access their scope
 
 
 /* 🚀🚀🚀 Task 2: Counter 🚀🚀🚀 */
@@ -64,10 +64,14 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function animalNames (array){
+    const sciName =[]
+    array.forEach(item =>{
+      sciName.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`)
+    });
+  return sciName
   }
-  
+  console.log(animalNames(zooAnimals));
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoo needs a list of all their animal's names converted to lower case. 
@@ -75,9 +79,17 @@ const zooAnimals = [
   For example: ['jackal, asiatic', .....]
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowerCaseNames(array){
+    const sciName =[]
+    array.forEach(item =>{
+      sciName.push(item.animal_name, item.scientific_name)
+    });
+    const LowerCase = sciName.map(function(item){
+      return item.toLowerCase();
+    });
+    return LowerCase;
   }
+   console.log(lowerCaseNames(zooAnimals))
   
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
