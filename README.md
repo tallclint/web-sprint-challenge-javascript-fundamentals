@@ -59,7 +59,9 @@ A closure gives you access to an outer function’s scope from an inner function
 
   4.  Explicit binding 
   Whenever we use JavaScript's call or apply method, this is explicitly defined.\
+
 5. Why do we need super() in an extended class?
+The super keyword is used to access and call functions on an object's parent.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
