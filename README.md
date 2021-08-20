@@ -26,12 +26,39 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+Map, reduce, and filter are all array methods in JavaScript. Each one will iterate over an array and perform a transformation or computation. Each will return a new array based on the result of the function.
+
+The map() method is used for creating a new array from an existing one
+Used when you're manipulating the whole array
+
+The filter() method takes each element in an array and it applies a conditional statement against it
+Used when filtering data and looking for specific items to push to the output array
+
+The reduce() method reduces an array of values down to just one value
+
+
 2. Explain the difference between a callback and a higher order function.
+The callback argument is a function that will be called once for every item in the array.
+A Higher-order function is a function that may receive a function as an argument and can even return a function
 
 3. Explain what a closure is.
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state
+A closure gives you access to an outer function’s scope from an inner function.
 
 4. Describe the four principles of the 'this' keyword.
+ 1.  Window/Global Object Binding
+  When in the global scope, the value of "this" will be the window/console Object
 
+  2.  Implicit Binding
+  Whenever a preceding dot calls a function, the object before the dot is this
+  This principle is one of the most commonly used applications of the this keyword. 
+
+  3.  New binding
+  Whenever we use a constructor function, this refers to the specific instance of the object that is created and returned by the constructor function.
+  A constructor function is a function that returns an object. It's an object creator
+
+  4.  Explicit binding 
+  Whenever we use JavaScript's call or apply method, this is explicitly defined.\
 5. Why do we need super() in an extended class?
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
